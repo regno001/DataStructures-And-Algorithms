@@ -23,7 +23,7 @@ public class TwoDArray {
              if (c==arr[i][j]){
                  System.out.printf("element found  %d at %d",c,arr[i][j]);
              }else {
-                 System.out.println("Element is not found");
+                 System.out.println("Element is not found ");
              }
 
             }}
