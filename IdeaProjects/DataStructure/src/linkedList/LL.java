@@ -48,11 +48,52 @@ public class LL {
         }
         System.out.println("NUll");
     }
+    //delete first
+    public void DeleteFirst(){
+        if(head==null){
+            System.out.println("List is empty");
+        return;
+        }
+       head = head.next;
+
+        }
+        //delete last
+        public void deleteLast(){
+            if(head==null){
+                System.out.println("List is empty");
+                return;
+            }
+            if (head.next==null){
+                head=null;
+                return;
+            }
+            Node secondLast = head;
+            Node lastNode =head.next;
+
+            while(lastNode.next!=null){
+                lastNode = lastNode.next;
+                secondLast = secondLast.next;
+
+            }
+            secondLast.next=null;
+
+        }
     public static void main(String[] args) {
         LL list = new LL();
 list.addFirst("A");
 list.addFirst("is");
+list.printList();
+        System.out.println("add at last");
 list.addLast("Sumit");
+
+list.printList();
+        System.out.println("deleted the first node");
+list.DeleteFirst();
+
+list.printList();
+        System.out.println("delete the last");
+
+list.deleteLast();
 list.printList();
     }
 }
