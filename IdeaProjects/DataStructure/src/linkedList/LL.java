@@ -2,6 +2,13 @@ package linkedList;
 
 public class LL {
     Node head;
+
+
+    private int size;
+
+    LL(){
+        this.size=0;
+    }
     class Node{
         String data;
 
@@ -10,6 +17,7 @@ public class LL {
         Node(String data){
             this.data=data;
             this.next=null;
+            size++;
         }
     }
     // add-first,last
@@ -55,7 +63,7 @@ public class LL {
         return;
         }
        head = head.next;
-
+size--;
         }
         //delete last
         public void deleteLast(){
@@ -63,6 +71,7 @@ public class LL {
                 System.out.println("List is empty");
                 return;
             }
+            size--;
             if (head.next==null){
                 head=null;
                 return;
@@ -77,6 +86,9 @@ public class LL {
             }
             secondLast.next=null;
 
+        }
+        public int getSize(){
+        return size;
         }
     public static void main(String[] args) {
         LL list = new LL();
@@ -95,5 +107,9 @@ list.printList();
 
 list.deleteLast();
 list.printList();
+
+
+        System.out.println(list.getSize());
     }
+
 }
