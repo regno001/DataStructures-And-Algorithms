@@ -108,6 +108,15 @@ public class ReverseLinkedList {
         head.next = null;
         head = prevNode;
     }
+    public Node reverseRecursive(Node head){
+        if (head==null || head.next== null){
+            return head;
+        }
+        Node newHead = reverseRecursive(head.next);
+        head.next.next=head;
+        head.next=null;
+         return newHead ;
+    }
     public static void main(String[] args) {
         ReverseLinkedList list = new ReverseLinkedList();
         list.addLast("Aman");
@@ -117,6 +126,9 @@ public class ReverseLinkedList {
 
         list.printList();
         list.reverseIterate();
+        list.printList();
+
+        list.head = list.reverseRecursive(list.head);
         list.printList();
 
 
