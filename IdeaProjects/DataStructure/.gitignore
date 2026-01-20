@@ -1,34 +1,42 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# ===============================
 # IntelliJ IDEA
+# ===============================
 .idea/
 *.iml
+*.iws
+*.ipr
 
-# Build / Output
+# ===============================
+# Java / Build files
+# ===============================
 out/
-### VS Code ###
+target/
+*.class
+
+# ===============================
+# OS / Windows junk
+# ===============================
+Thumbs.db
+Desktop.ini
+
+# ===============================
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# VS Code (if ever used)
+# ===============================
 .vscode/
 
-### Mac OS ###
+# ===============================
+# Node / Python (accidental)
+# ===============================
+node_modules/
+__pycache__/
+*.pyc
+
+# ===============================
+# Mac (safe to keep)
+# ===============================
 .DS_Store
