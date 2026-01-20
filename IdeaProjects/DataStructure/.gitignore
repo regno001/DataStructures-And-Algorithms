@@ -1,23 +1,17 @@
 # ===============================
-# IntelliJ IDEA
+# IntelliJ IDEA (ONLY these)
 # ===============================
 .idea/
 *.iml
-*.iws
 *.ipr
+*.iws
 
 # ===============================
-# Java / Build files
+# Java build / output
 # ===============================
 out/
 target/
 *.class
-
-# ===============================
-# OS / Windows junk
-# ===============================
-Thumbs.db
-Desktop.ini
 
 # ===============================
 # Logs
@@ -25,18 +19,13 @@ Desktop.ini
 *.log
 
 # ===============================
-# VS Code (if ever used)
-# ===============================
-.vscode/
-
-# ===============================
-# Node / Python (accidental)
-# ===============================
-node_modules/
-__pycache__/
-*.pyc
-
-# ===============================
-# Mac (safe to keep)
+# OS files
 # ===============================
 .DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===============================
+# DO NOT IGNORE SOURCE CODE
+# ===============================
+!src/
