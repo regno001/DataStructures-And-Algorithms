@@ -21,7 +21,12 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
+# IntelliJ IDEA
+.idea/
+*.iml
 
+# Build / Output
+out/
 ### VS Code ###
 .vscode/
 
